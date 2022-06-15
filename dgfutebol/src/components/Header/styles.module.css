@@ -1,0 +1,10 @@
+.header {
+    background-color: blue;
+    display: flex;
+   justify-content: space-evenly;
+}
+
+.imagem{
+    width: 10%;
+    background: aqua;
+}

@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.text {
+    margin-left: 10px;
+    display: flex;  
+} 
+.textEstadio {
+    
+    display: flex;  
+} 
+
+.textMandante {
+    margin-left: 10px;
+    margin-right: 5px;
+    display: flex;  
+} 
+
+.textVisitante {
+    margin-left: 5px;
+    margin-right: 10px;
+    display: flex;  
+} 
+
+.data{
+    display: flex;
+    margin-left: 50px;
+}
+
+.local{
+    display: flex; 
+}
+
+.localVisitante{
+    display: flex; 
+    margin-left: 90px;
+}
+
+.jogosIda{
+    display: flex;
+    margin-left: 10px;
+}
+
+.tabela{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.artilheiros{
+    display: flex;
+}
+
+.ranking{
+    display: flex;
+    margin-left:10px;
+}
+.gols{
+    margin-right: 20px;
+}

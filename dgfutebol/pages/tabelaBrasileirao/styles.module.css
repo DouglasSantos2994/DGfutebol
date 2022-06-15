@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    margin-left: 10px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+} 
+
+.text2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.artilheiros{
+    display: flex;
+}
+
+.ranking{
+    display: flex;
+    margin-left:10px;
+}
+.gols{
+    margin-right: 20px;
+}
