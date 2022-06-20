@@ -9,7 +9,7 @@ export default function CopaFase3() {
     axios
       .get("https://api.api-futebol.com.br/v1/campeonatos/2/fases/172", {
         headers: {
-          Authorization: "Bearer live_aa9f90bc0f61eae47b3e3a4a73ef29",
+          Authorization: "Bearer live_31d86f2d5b79975c9bc51d25d56e49",
         },
       })
       .then(function (response) {

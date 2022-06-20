@@ -1,10 +1,10 @@
 .header {
-    background-color: blue;
+    background-color: #06AA48;
     display: flex;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
 }
 
-.imagem{
+.imagem {
     width: 10%;
     background: aqua;
 }

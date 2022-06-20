@@ -11,7 +11,7 @@ export default function CopaFase2() {
     axios
       .get("https://api.api-futebol.com.br/v1/campeonatos/2/fases/171", {
         headers: {
-          Authorization: "Bearer live_aa9f90bc0f61eae47b3e3a4a73ef29",
+          Authorization: "Bearer live_31d86f2d5b79975c9bc51d25d56e49",
         },
       })
       .then(function (response) {
@@ -27,59 +27,62 @@ export default function CopaFase2() {
           {tabelaCopa &&
             Object.values(tabelaCopa.chaves).map((copaBrasil, index) => {
               return (
-                <tr key={index}>
-                  <td>
-                    <div className={styles.container}>
-                      <div className={styles.data}>
-                        <p className={styles.text}>
-                          {copaBrasil?.partida_ida.data_realizacao}
-                        </p>
-                        <p className={styles.textEstadio}>
-                          {copaBrasil?.partida_ida.estadio.nome_popular}
-                        </p>
+                <div key={index}>
 
-                        <p className={styles.text}>
-                          {copaBrasil?.partida_ida.hora_realizacao}
-                        </p>
-                      </div>
-
-                      <div className={styles.jogosIda}>
-                        <div className={styles.local}>
-                          <p className={styles.textMandante}>
-                            {copaBrasil?.partida_ida.time_mandante.nome_popular}
+                  <tr>
+                    <td>
+                      <div className={styles.container}>
+                        <div className={styles.data}>
+                          <p className={styles.text}>
+                            {copaBrasil?.partida_ida.data_realizacao}
+                          </p>
+                          <p className={styles.textEstadio}>
+                            {copaBrasil?.partida_ida.estadio.nome_popular}
                           </p>
 
-                          <img
-                            width="20"
-                            src={copaBrasil?.partida_ida.time_mandante.escudo}
-                          />
-
-                          <p className={styles.textMandante}>
-                            {copaBrasil?.partida_ida.placar_mandante}
+                          <p className={styles.text}>
+                            {copaBrasil?.partida_ida.hora_realizacao}
                           </p>
                         </div>
 
-                        <div className={styles.localVisitante}>
-                          <p className={styles.textVisitante}>
-                            {copaBrasil?.partida_ida.placar_visitante}
-                          </p>
+                        <div className={styles.jogosIda}>
+                          <div className={styles.local}>
+                            <p className={styles.textMandante}>
+                              {copaBrasil?.partida_ida.time_mandante.nome_popular}
+                            </p>
 
-                          <img
-                            width="20"
-                            src={copaBrasil?.partida_ida.time_visitante.escudo}
-                          />
+                            <img
+                              width="20"
+                              src={copaBrasil?.partida_ida.time_mandante.escudo}
+                            />
 
-                          <p className={styles.textVisitante}>
-                            {
-                              copaBrasil?.partida_ida.time_visitante
-                                .nome_popular
-                            }
-                          </p>
+                            <p className={styles.textMandante}>
+                              {copaBrasil?.partida_ida.placar_mandante}
+                            </p>
+                          </div>
+
+                          <div className={styles.localVisitante}>
+                            <p className={styles.textVisitante}>
+                              {copaBrasil?.partida_ida.placar_visitante}
+                            </p>
+
+                            <img
+                              width="20"
+                              src={copaBrasil?.partida_ida.time_visitante.escudo}
+                            />
+
+                            <p className={styles.textVisitante}>
+                              {
+                                copaBrasil?.partida_ida.time_visitante
+                                  .nome_popular
+                              }
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
+                    </td>
+                  </tr>
+                </div>
               );
             })}
         </table>

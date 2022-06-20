@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     flex-direction: row;
 }
@@ -8,7 +8,7 @@
     display: flex;
     width: 50%;
     justify-content: space-between;
-} 
+}
 
 .text2 {
     display: flex;
@@ -16,14 +16,53 @@
     justify-content: space-between;
     margin-left: 10px;
 }
-.artilheiros{
+
+.artilheiros {
     display: flex;
 }
 
-.ranking{
+.ranking {
     display: flex;
-    margin-left:10px;
+    margin-left: 10px;
 }
-.gols{
+
+.gols {
     margin-right: 20px;
+}
+
+.menu {
+    background-color: #06AA48;
+    height: 70px;
+}
+
+.boxTabela {
+    margin-left: 40px;
+    width: 50%;
+    border: 1px solid black;
+    border-spacing: 0;
+
+}
+
+.headerTabela {
+    border: 1px solid #06AA48;
+    width: 0%;
+    margin-left: 40;
+}
+
+.ColunaTabela {
+    border: 1px solid black;
+    width: 0%;
+    margin-left: 40;
+}
+
+.positivo {
+    color: #06AA48;
+}
+
+.negativo {
+    color: red;
+}
+
+.neutro {
+    color: darkgray;
 }
