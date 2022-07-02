@@ -1,11 +1,11 @@
 .container {
   padding: 0 2rem;
-
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header {
   background-color: aqua;
-
 }
 
 .main {
@@ -13,14 +13,15 @@
   padding: 4rem 0;
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .videos {
   display: flex;
-  justify-content: space-between;
+
+  margin-left: 10px;
 }
 
 .footer {
@@ -32,6 +33,158 @@
   align-items: center;
   background-color: black;
 }
+
+.videos1{
+margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.tabelaContainer {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.boxTabelaPontuacao {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #06AA48;
+  justify-content: space-between;
+}
+
+.classificacaoMenu {
+  color: #fff;
+ margin-left: 55px;
+}
+
+.headerTabela {
+  color: #fff;
+  margin-right: 40px;
+}
+
+.times {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background: #f5f5f5;
+}
+
+.textoTimes{
+  text-align: left;
+  width: 58%;
+}
+
+.variacao {
+  display: flex;
+  align-items: center;
+}
+
+.variacaoTexto {
+  margin-right: 5px;
+}
+.pontos {
+  margin-right: 35px;
+}
+
+
+.timesClassificacao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 38%;
+  justify-content: space-between;
+}
+
+.blue {
+  color: blue;
+  margin-left: 7px;
+}
+
+.imagem {
+  width: 100%;
+}
+
+.containerCopa {
+  width: 53%;
+  margin-top: 15px;
+}
+
+.tabela {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tabelaFase3 {
+  border: 1px solid black;
+  width: 50%;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+}
+
+.jogosIda {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 25PX;
+  align-items: center;
+
+}
+
+.placares {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.local {
+  display: flex;
+  align-items: center;
+
+}
+
+.text {
+  margin-left: 10px;
+  display: flex;
+}
+
+.textEstadio {
+  display: flex;
+}
+
+.textMandante {
+  justify-content: space-around;
+  display: flex;
+}
+
+.textVisitante {
+  margin-left: 10px;
+  display: flex;
+}
+
+
+.localVisitante {
+  display: flex;
+
+}
+
+
+
+
+
+
+
 
 
 

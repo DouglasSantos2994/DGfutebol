@@ -1,4 +1,4 @@
-export const SetaCima = ({ width, stroke }) => {
+export const SetaBaixo = ({ width, stroke }) => {
   return (
     <svg
       width={width ? width : "24"}
@@ -7,7 +7,7 @@ export const SetaCima = ({ width, stroke }) => {
       fill={stroke ? stroke : "black"}
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M0 5L5 0L10 5H0Z" fill={stroke ? stroke : "black"} />
+      <path d="M0 0L5 5L10 0H0Z" fill={stroke ? stroke : "black"} />
     </svg>
   );
 };

@@ -1,64 +1,62 @@
-.container{
+
+.tabela{   
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
+.tabelaFase2{
+    border: 1px solid black;
+    width: 50%;
+    margin-top: 15px;
+}
 
+.data{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.jogosIda{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10PX;
+}
+
+.placares{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.local{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 50%;
+}
 
 .text {
     margin-left: 10px;
     display: flex;  
 } 
-.textEstadio {
-    
+.textEstadio { 
     display: flex;  
 } 
 
 .textMandante {
-    margin-left: 10px;
-    margin-right: 5px;
+   justify-content: space-around;
     display: flex;  
 } 
 
 .textVisitante {
-    margin-left: 5px;
-    margin-right: 10px;
+    margin-left: 10px;
     display: flex;  
 } 
 
-.data{
-    display: flex;
-    margin-left: 50px;
-}
-
-.local{
-    display: flex; 
-}
 
 .localVisitante{
     display: flex; 
-    margin-left: 90px;
-}
-
-.jogosIda{
-    display: flex;
-    margin-left: 10px;
-}
-
-.tabela{
     
-    display: flex;
-    justify-content: center;
-}
-
-.artilheiros{
-    display: flex;
-}
-
-.ranking{
-    display: flex;
-    margin-left:10px;
-}
-.gols{
-    margin-right: 20px;
 }

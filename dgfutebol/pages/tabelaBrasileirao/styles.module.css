@@ -3,6 +3,86 @@
     flex-direction: row;
 }
 
+.tabelaContainer {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxTabelaPontuacao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #06AA48;
+}
+
+.classificacaoMenu {
+    color: #fff;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerTabela {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.times {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background: #f5f5f5;
+    padding: 33px;
+}
+
+.timesClassificacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    padding: 10px;
+}
+
+.times1 {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.tabelaRodada {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 99%;
+    margin-top: 100px;
+}
+
+
+.tabelaLegenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.legendas{
+    width: 61%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rodadasTabela {
+    width: 20%;
+}
+
 .text {
     margin-left: 10px;
     display: flex;
@@ -19,6 +99,7 @@
 
 .artilheiros {
     display: flex;
+    flex-direction: row;
 }
 
 .ranking {
@@ -26,43 +107,183 @@
     margin-left: 10px;
 }
 
-.gols {
-    margin-right: 20px;
+.escudo {
+    width: 40px;
+    margin-left: 5px;
 }
 
+.status{
+    margin-left: 5px;
+}
+
+
+.quantidadeRodadas{
+color: #fff;
+
+}
 .menu {
+    display: flex;
+    justify-content: space-between;
     background-color: #06AA48;
-    height: 70px;
+    height: 50px;
+    align-items: center;
 }
 
 .boxTabela {
-    margin-left: 40px;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.rodadaJogo{
+    margin-top: 8px;
+}
+
+.textGols{
+    font-weight: bold;
+
+}
+
+.tabelaBody {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.variacao {
+    display: flex;
+    align-items: center;
+
+}
+
+.textoClassificacao {
+    margin-left: 10px;
+}
+
+.variacaoTexto {
+    margin-right: 5px;
+}
+
+
+.boxTabelaArtilheiro {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.tabelaArtilheiro {
+    width: 70%;
     border: 1px solid black;
     border-spacing: 0;
+    margin: 0 auto;
+}
+
+.ranking {
+    height: 50px;
+    background-color: #06AA48;
+}
+
+.jogadores {
+    margin-left: 15px;
 
 }
 
-.headerTabela {
-    border: 1px solid #06AA48;
-    width: 0%;
-    margin-left: 40;
+.Artilheiros {
+    display: flex;
+    justify-content: space-between;
 }
 
-.ColunaTabela {
+
+.tabelaRodadas {
+    margin-left: 20px;
     border: 1px solid black;
-    width: 0%;
-    margin-left: 40;
+    width: 99%;
+    height: 100%;
+    border-spacing: 0;
 }
 
-.positivo {
-    color: #06AA48;
+.novaTabela {
+    display: flex;
+    width: 66%;
+    margin: 0 auto;
 }
 
-.negativo {
+.botao {
+    background-color: #06AA48;
+    border: none;
+    cursor: pointer;
+}
+
+.estadio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dataRodada {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.placarVisitante {
+    font-weight: bold;
+    margin-left: 5px;
+   
+}
+.placarMandante {
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menuRodada {
+    width: 100%;
+    height: 50px;
+    background-color: #06AA48;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.rodadasTime {
+    display: flex;
+    justify-content: center;
+}
+
+.legendaIcon {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.imagem {
+    width: 100%;
+   
+}
+
+.blue {
+    color: blue
+}
+
+.red {
     color: red;
+
 }
 
-.neutro {
-    color: darkgray;
+.aqua {
+    color: aqua
+}
+
+.green {
+    color: green
+}
+
+.grey {
+    color: Grey
 }

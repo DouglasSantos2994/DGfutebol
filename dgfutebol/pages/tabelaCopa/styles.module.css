@@ -3,8 +3,6 @@
     flex-direction: column;
 }
 
-
-
 .text {
     margin-left: 10px;
     display: flex;  
@@ -61,4 +59,14 @@
 }
 .gols{
     margin-right: 20px;
+}
+
+.botao {
+    border: none;
+    cursor: pointer;
+}
+
+.imagem {
+    width: 100%;
+   
 }
