@@ -1,18 +1,18 @@
 import styles from "./styles.module.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Contra, contra } from "../../assets/icons/Contra";
+
 
 export default function CopaFase1() {
   const [tabelaCopa, setTabelaCopa] = useState();
 
-  console.log("hdhddgdgdg", tabelaCopa);
+ 
 
   useEffect(() => {
     axios
       .get("https://api.api-futebol.com.br/v1/campeonatos/2/fases/170", {
         headers: {
-          Authorization: "Bearer live_ddb6c70e5602ed31085242c6aef6be",
+          Authorization: "Bearer live_1ee925728c4e0a9daa1e5578344261",
         },
       })
       .then(function (response) {
@@ -22,7 +22,6 @@ export default function CopaFase1() {
 
   return (
     <div>
-      <h1>Fase1 - Mata mata </h1>
       <div className={styles.tabela}>
         {tabelaCopa &&
           Object.values(tabelaCopa.chaves).map((copaBrasil, index) => {
@@ -48,13 +47,6 @@ export default function CopaFase1() {
                         <div className={styles.jogosIda}>
                           <div className={styles.local}>
                             <div className={styles.textEstadio}>
-                              {/* <p className={styles.textMandante}>
-                              {
-                                copaBrasil?.partida_ida.time_mandante
-                                  .nome_popular
-                              }
-                            </p> */}
-
                               <img
                                 width="70"
                                 src={copaBrasil?.partida_ida.time_mandante.escudo}
@@ -62,16 +54,11 @@ export default function CopaFase1() {
                             </div>
 
                             <div className={styles.placares}>
-                              {/* <p className={styles.textMandante}>
-                              {copaBrasil?.partida_ida.placar_mandante}
-                            </p> */}
+                           
                               <p className={styles.textMandante}>
                                 {copaBrasil?.partida_ida.placar}
                               </p>
-                              {/* <Contra width={10} /> */}
-                              {/* <p className={styles.textVisitante}>
-                              {copaBrasil?.partida_ida.placar_visitante}
-                            </p> */}
+                           
                             </div>
                             <div className={styles.textEstadio}>
                               <img
@@ -80,13 +67,6 @@ export default function CopaFase1() {
                                   copaBrasil?.partida_ida.time_visitante.escudo
                                 }
                               />
-
-                              {/* <p className={styles.textVisitante}>
-                              {
-                                copaBrasil?.partida_ida.time_visitante
-                                  .nome_popular
-                              }
-                            </p> */}
                             </div>
                           </div>
                         </div>

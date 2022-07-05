@@ -10,6 +10,7 @@
     width: 100%;
 }
 
+
 .tabelaFase3 {
     border: 1px solid black;
     width: 50%;
@@ -25,7 +26,12 @@
     justify-content: space-around;
     padding-bottom: 25PX;
     align-items: center;
+}
 
+
+.idaVolta{
+    display: flex;
+    flex-direction: row;
 }
 
 .placares {
@@ -42,11 +48,14 @@
 
 .text {
     margin-left: 10px;
+    margin-right: 10px;
     display: flex;
+    font-weight: 500;
 }
 
 .textEstadio {
     display: flex;
+    font-weight: 500;
 }
 
 .textMandante {
@@ -57,6 +66,8 @@
 .textVisitante {
     margin-left: 10px;
     display: flex;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 

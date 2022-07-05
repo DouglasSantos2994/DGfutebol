@@ -40,6 +40,49 @@
     height: 50px;
     background: #f5f5f5;
     padding: 33px;
+
+}
+
+.timesImpar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    padding: 33px;
+
+}
+
+.colocacao {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.ranking {
+    margin-left: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.gols {
+    margin-right: 30px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.rankingPosicao {
+    width: 30px;
+    color: #999;
+    font-family: opensans, arial, sans-serif;
+    font-size: 28px;
+}
+
+.quantidadeGols {
+    color: #333;
+    font-family: 'opensans-bold', arial, sans-serif;
+    font-size: 26px;
 }
 
 .timesClassificacao {
@@ -72,7 +115,7 @@
     width: 80%;
 }
 
-.legendas{
+.legendas {
     width: 61%;
     display: flex;
     justify-content: space-between;
@@ -102,25 +145,22 @@
     flex-direction: row;
 }
 
-.ranking {
-    display: flex;
-    margin-left: 10px;
-}
 
 .escudo {
     width: 40px;
     margin-left: 5px;
 }
 
-.status{
+.status {
     margin-left: 5px;
 }
 
 
-.quantidadeRodadas{
-color: #fff;
+.quantidadeRodadas {
+    color: #fff;
 
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -136,11 +176,11 @@ color: #fff;
     border-spacing: 0;
 }
 
-.rodadaJogo{
+.rodadaJogo {
     margin-top: 8px;
 }
 
-.textGols{
+.textGols {
     font-weight: bold;
 
 }
@@ -171,6 +211,7 @@ color: #fff;
     display: flex;
     width: 100%;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .tabelaArtilheiro {
@@ -180,10 +221,6 @@ color: #fff;
     margin: 0 auto;
 }
 
-.ranking {
-    height: 50px;
-    background-color: #06AA48;
-}
 
 .jogadores {
     margin-left: 15px;
@@ -231,12 +268,13 @@ color: #fff;
 .placarVisitante {
     font-weight: bold;
     margin-left: 5px;
-   
+
 }
+
 .placarMandante {
     font-weight: bold;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .menuRodada {
@@ -264,7 +302,7 @@ color: #fff;
 
 .imagem {
     width: 100%;
-   
+
 }
 
 .blue {
@@ -286,4 +324,48 @@ color: #fff;
 
 .grey {
     color: Grey
+}
+
+.containerJogadores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dadosJogadores {
+    display: flex;
+    align-items: center;
+}
+
+.jogadoresArtilheiros {
+
+    width: 50px;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.fotoJogador {
+    border-radius: 50px;
+    background-color: #F1F1F1;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    width: 50px;
+}
+
+.atleta {
+    margin-left: 20px;
+}
+
+.nome {
+    font-size: 22px;
+    height: 5px;
 }

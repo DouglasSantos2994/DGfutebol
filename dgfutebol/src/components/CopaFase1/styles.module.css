@@ -6,20 +6,21 @@
 
 .tabelaFase1{
     border: 1px solid black;
-    width: 50%;
+    width: 80%;
     margin-top: 15px;
 }
 
 .data{
     display: flex;
     justify-content: center;
+  
  
 }
 
 .jogosIda{
     display: flex;
     justify-content: center;
-    padding-bottom: 10PX;
+    padding-bottom: 25PX;
 }
 
 .placares{
@@ -36,16 +37,21 @@
 }
 
 .text {
+    font-weight: 500;
+    margin-right: 10px;
     margin-left: 10px;
     display: flex;  
 } 
 .textEstadio { 
     display: flex;  
+    font-weight: 500;
 } 
 
 .textMandante {
-   justify-content: space-around;
+   justify-content: space-between;
     display: flex;  
+    font-weight: 500;
+    font-size: 20px;
 } 
 
 .textVisitante {

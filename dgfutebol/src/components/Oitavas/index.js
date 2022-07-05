@@ -5,13 +5,13 @@ import axios from "axios";
 export default function Oitavas() {
   const [tabelaCopa, setTabelaCopa] = useState();
 
-  console.log("tabelaCopa", tabelaCopa);
+ 
 
   useEffect(() => {
     axios
       .get("https://api.api-futebol.com.br/v1/campeonatos/2/fases/173", {
         headers: {
-          Authorization: "Bearer live_ddb6c70e5602ed31085242c6aef6be",
+          Authorization: "Bearer live_80222ded76dc4a8805ebb0c3f6c5a7",
         },
       })
       .then(function (response) {
@@ -20,14 +20,14 @@ export default function Oitavas() {
   }, []);
 
   return (
-    <div>
+    <div >
       <div className={styles.tabela}>
         {tabelaCopa &&
           Object.values(tabelaCopa.chaves).map((copaBrasil, index) => {
             return (
               <div key={index} className={styles.container}>
                 <div>
-                <div>
+                <div className={styles.idaVolta}>
                   <div className={styles.tabelaFase3}>
                     <div className={styles.data}>
                       <p className={styles.text}>

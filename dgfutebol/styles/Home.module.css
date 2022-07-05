@@ -8,20 +8,18 @@
   background-color: aqua;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
 .videos {
   display: flex;
+  margin-right: 40px;
+}
 
-  margin-left: 10px;
+.brasileirao {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .footer {
@@ -34,8 +32,8 @@
   background-color: black;
 }
 
-.videos1{
-margin-right: 10px;
+.videos1 {
+  margin-right: 10px;
 }
 
 .container {
@@ -49,6 +47,7 @@ margin-right: 10px;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .boxTabelaPontuacao {
@@ -61,7 +60,7 @@ margin-right: 10px;
 
 .classificacaoMenu {
   color: #fff;
- margin-left: 55px;
+  margin-left: 55px;
 }
 
 .headerTabela {
@@ -78,7 +77,7 @@ margin-right: 10px;
   background: #f5f5f5;
 }
 
-.textoTimes{
+.textoTimes {
   text-align: left;
   width: 58%;
 }
@@ -91,6 +90,7 @@ margin-right: 10px;
 .variacaoTexto {
   margin-right: 5px;
 }
+
 .pontos {
   margin-right: 35px;
 }
@@ -100,7 +100,7 @@ margin-right: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 38%;
+  width: 50%;
   justify-content: space-between;
 }
 
@@ -109,13 +109,20 @@ margin-right: 10px;
   margin-left: 7px;
 }
 
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .imagem {
   width: 100%;
+  cursor: pointer;
 }
 
 .containerCopa {
-  width: 53%;
-  margin-top: 15px;
+  width: 53%; 
 }
 
 .tabela {
@@ -124,9 +131,13 @@ margin-right: 10px;
   width: 100%;
 }
 
-.tabelaFase3 {
+.copaTabela {
   border: 1px solid black;
-  width: 50%;
+}
+
+.tabelaFase3 {
+  width: 350px;
+  margin-bottom: 10px;
 }
 
 .data {
@@ -137,9 +148,17 @@ margin-right: 10px;
 .jogosIda {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 25PX;
   align-items: center;
+}
 
+.rodadaAtual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #06AA48;
+  color: #fff;
+  font-size: 16;
+ height: 40px;
 }
 
 .placares {

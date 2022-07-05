@@ -7,363 +7,68 @@ import { Neutro } from "../../src/assets/icons/Neutro";
 import { SetaEsquerda } from "../../src/assets/icons/SetaEsquerda";
 import { SetaDireita } from "../../src/assets/icons/SetaDireita";
 import { Header } from "../../src/components/Header";
+import { Footer } from "../../src/components/Footer";
 import { Contra } from "../../src/assets/icons/Contra";
 
 export default function TabelaBrasileirao() {
-  const [tabela, setTabela] = useState();
+  const mockArtilheiro = {
 
-  const [artilheiros, setArtilheiros] = useState();
-  const [marcador, setMarcador] = useState(1);
-  const mock = {
-    "nome": "1ª Rodada",
-    "slug": "1a-rodada",
-    "rodada": 1,
-    "status": "encerrada",
-    "proxima_rodada": {
-      "nome": "2ª Rodada",
-      "slug": "2a-rodada",
-      "rodada": 2,
-      "status": "encerrada"
-    },
-    "rodada_anterior": null,
-    "_link": "/v1/campeonatos/10/rodadas/1",
-    "partidas": [
+    "atleta": [
       {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
+        "classificacao": 1,
+        "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ccdc1656.svg",
+        "jogador": "https://s.glbimg.com/es/sde/f/2022/03/01/3abaa943f1546750dd057d6cb3559ce5_140x140.png",
+        "nome": "Calleri",
+        "posicao": "Atacante",
+        "gols": 9,
+
+      },
+
+      {
+        "classificacao": 1,
+        "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg",
+        "jogador": "https://s.glbimg.com/es/sde/f/2022/04/20/5bb8f223990a3b79975f90d376fb341a_140x140.png",
+        "nome": "Cano",
+        "posicao": "Atacante",
+        "gols": 9,
+
+      },
+
+      {
+        "classificacao": 2,
+        "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999dc97b4e2.svg",
+        "jogador": "https://s.glbimg.com/es/sde/f/2022/03/10/5215be2746c5556d28458274ecbe4b16_140x140.png",
+        "nome": "Pedro Raul",
+        "posicao": "Atacante",
+        "gols": 7,
+      },
+
+      {
+        "classificacao": 2,
+        "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca6bfd30.svg",
+        "jogador": "https://s.glbimg.com/es/sde/f/2021/04/23/d9ed7fa34aa12e4ce8768c9c2a2b4560_140x140.png",
+        "nome": "Hulk",
+        "posicao": "Atacante",
+        "gols": 7,
+
       },
       {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
+        "classificacao": 2,
+        "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c8488adb.svg",
+        "jogador": "https://s.glbimg.com/es/sde/f/2022/04/08/c60eb6c17dd46f0a98ac8d236bddbbd7_140x140.png",
+        "nome": " Bissoli",
+        "posicao": "Atacante",
+        "gols": 7,
+
       },
-      {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
-      },
-      {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
-      },
-      {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
-      },
-      {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
-      },
-      {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
-      },
-      {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
-      },
-      {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
-      },
-      {
-        "partida_id": 4844,
-        "campeonato": {
-          "campeonato_id": 10,
-          "nome": "Campeonato Brasileiro",
-          "slug": "campeonato-brasileiro"
-        },
-        "placar": "Fluminense 0x0 Santos",
-        "time_mandante": {
-          "time_id": 26,
-          "nome_popular": "Fluminense",
-          "sigla": "FLU",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-        },
-        "time_visitante": {
-          "time_id": 63,
-          "nome_popular": "Santos",
-          "sigla": "SAN",
-          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
-        },
-        "placar_mandante": 0,
-        "placar_visitante": 0,
-        "status": "finalizado",
-        "slug": "fluminense-santos-4844",
-        "data_realizacao": "09/04/2022",
-        "hora_realizacao": "16:30",
-        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
-        "estadio": {
-          "estadio_id": 19,
-          "nome_popular": "Maracanã"
-        },
-        "_link": "/v1/partidas/4844"
-      }
+
     ]
   }
-  const [rodada, setRodada] = useState(mock);
-  console.log("tabela", tabela);
-  console.log("rodada", rodada);
-  const [token, setToken] = useState("test_e63e0e74587d78aee846591638b3c7");
+  const [tabela, setTabela] = useState();
+  const [artilheiros, setArtilheiros] = useState();
+  const [marcador, setMarcador] = useState(15);
+  const [rodada, setRodada] = useState();
+  const [token, setToken] = useState("live_759e837c551b764406cb6c001e5b32");
 
   useEffect(() => {
     axios
@@ -377,22 +82,11 @@ export default function TabelaBrasileirao() {
       })
       .catch(function (error) {
         if (error.response.status === 429) {
-          setToken("test_e63e0e74587d78aee846591638b3c7");
+          setToken("live_116459a098cbea8a35c760e13db4c5");
         }
       });
   }, [token]);
 
-  useEffect(() => {
-    axios
-      .get(" https://api.api-futebol.com.br/v1/campeonatos/10/artilharia", {
-        headers: {
-          Authorization: "Bearer test_e63e0e74587d78aee846591638b3c7",
-        },
-      })
-      .then(function (response) {
-        setArtilheiros(response.data);
-      });
-  }, []);
 
   useEffect(() => {
     axios
@@ -400,12 +94,12 @@ export default function TabelaBrasileirao() {
         ` https://api.api-futebol.com.br/v1/campeonatos/10/rodadas/${marcador}`,
         {
           headers: {
-            Authorization: "Bearer test_e63e0e74587d78aee846591638b3c7",
+            Authorization: "Bearer live_eec81143fd642c316c0b8343f9aa8d",
           },
         }
       )
       .then(function (response) {
-        setRodada(mock);
+        setRodada(response.data);
       });
   }, [marcador]);
 
@@ -532,54 +226,105 @@ export default function TabelaBrasileirao() {
               };
 
               return (
+                <>
+                  {campeonato.posicao % 2 === 0 &&
 
-                <div className={styles.bodyPontuacao}>
-                  <div className={styles.Pontuacaoclassificacao}>
-                    <div className={styles.Classificacao}>
-                      <div className={styles.times}>
-                        <div className={styles.timesClassificacao}>
-                          <p>
-                            {posicoes()} </p>
-                          <p className={styles.times1}>
-                            {campeonato.time.nome_popular}
-                          </p>
-                          <p>
-                            {variacao()}
-                          </p>
-                        </div>
-                        <div>
-                          <p >{campeonato.pontos}</p>
-                        </div>
-                        <div>
-                          <p >{campeonato.jogos}</p>
-                        </div>
-                        <div>
-                          <p >{campeonato.vitorias}</p>
-                        </div>
-                        <div>
-                          <p >{campeonato.empates}</p>
-                        </div>
-                        <div>
-                          <p >{campeonato.derrotas}</p>
-                        </div>
-                        <div>
-                          <p >{campeonato.gols_pro}</p>
-                        </div>
-                        <div>
-                          <p >
-                            {campeonato.gols_contra}
-                          </p>
-                        </div>
-                        <div>
-                          <p >
-                            {campeonato.aproveitamento}
-                          </p>
+                    <div className={styles.bodyPontuacao}>
+                      <div className={styles.Pontuacaoclassificacao}>
+                        <div className={styles.Classificacao}>
+                          <div className={styles.times}>
+                            <div className={styles.timesClassificacao}>
+                              <p>
+                                {posicoes()} </p>
+                              <p className={styles.times1}>
+                                {campeonato.time.nome_popular}
+                              </p>
+                              <p>
+                                {variacao()}
+                              </p>
+                            </div>
+                            <div>
+                              <p >{campeonato.pontos}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.jogos}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.vitorias}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.empates}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.derrotas}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.gols_pro}</p>
+                            </div>
+                            <div>
+                              <p >
+                                {campeonato.gols_contra}
+                              </p>
+                            </div>
+                            <div>
+                              <p >
+                                {campeonato.aproveitamento}
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
+                  }
+                  {campeonato.posicao % 2 !== 0 &&
+                    <div className={styles.bodyPontuacao}>
+                      <div className={styles.Pontuacaoclassificacao}>
+                        <div className={styles.Classificacao}>
+                          <div className={styles.timesImpar}>
+                            <div className={styles.timesClassificacao}>
+                              <p>
+                                {posicoes()} </p>
+                              <p className={styles.times1}>
+                                {campeonato.time.nome_popular}
+                              </p>
+                              <p>
+                                {variacao()}
+                              </p>
+                            </div>
+                            <div>
+                              <p >{campeonato.pontos}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.jogos}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.vitorias}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.empates}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.derrotas}</p>
+                            </div>
+                            <div>
+                              <p >{campeonato.gols_pro}</p>
+                            </div>
+                            <div>
+                              <p >
+                                {campeonato.gols_contra}
+                              </p>
+                            </div>
+                            <div>
+                              <p >
+                                {campeonato.aproveitamento}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  }
+                </>
               )
             })
           }
@@ -588,72 +333,23 @@ export default function TabelaBrasileirao() {
         <div className={styles.rodadasTabela}>
           <div className={styles.tabelaRodadas}>
             <div className={styles.menuRodada}>
+              <button
+                className={styles.botao}
+                disabled={marcador > 1 ? false : true}
+                onClick={() => setMarcador(marcador - 1)}
+              >
+                <SetaEsquerda stroke="#fff" width={20} />
+              </button>
 
+              <span className={styles.quantidadeRodadas}>{rodada?.nome}</span>
+              <button
+               disabled={marcador >= 38 ? true : false}
+                className={styles.botao}
+                onClick={() => setMarcador(marcador + 1)}
+              >
+                <SetaDireita stroke="#fff" width={20} />
+              </button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-                  <button
-                    className={styles.botao}
-                    onClick={() => setMarcador(marcador - 1)}
-                  >
-                    <SetaEsquerda sdivoke="#fff" width={20} />
-                  </button>
-
-                  <span className={styles.quantidadeRodadas}>Rodadas</span>
-                  <button
-                    className={styles.botao}
-                    onClick={() => setMarcador(marcador + 1)}
-                  >
-                    <SetaDireita stroke="#fff" width={20} />
-                  </button>
-            
             </div>
 
             {rodada &&
@@ -742,31 +438,28 @@ export default function TabelaBrasileirao() {
       <div className={styles.boxTabelaArtilheiro}>
         <div className={styles.tabelaArtilheiro}>
           <div className={styles.menu}>
-            <div>Ranking</div>
-            <div>Gols</div>
+            <div className={styles.ranking}>Ranking</div>
+            <div className={styles.gols}>Gols</div>
           </div>
 
-          {artilheiros &&
-            Object.values(artilheiros).slice(0,3).map((jogadores, index) => {
-             
+          {mockArtilheiro &&
+            Object.values(mockArtilheiro.atleta).map((jogadores, index) => {
               return (
-                <div key={index}>
-                  <div>
-                    <div className={styles.Artilheiros}>
-                      <div>
-                        <div className={styles.artilheiros}>
-                          <img
-                            className={styles.escudo}
-                            src={jogadores.time.escudo}
-                          />
-                          <p className={styles.jogadores}>
-                            {jogadores.atleta.nome_popular}
-                          </p>
-                        </div>
+                <div key={index} className={styles.colocacao}>
+                  <div className={styles.containerJogadores}>
+                    <div className={styles.dadosJogadores}>
+                      <p className={styles.rankingPosicao}>{jogadores.classificacao}</p>
+                      <div className={styles.fotoJogador}>
+                        <img className={styles.jogadoresArtilheiros} src={jogadores.jogador} />
                       </div>
-                      <div>
-                        <p className={styles.gols}>{jogadores.gols}</p>
+                      <img width="30px" src={jogadores.escudo} />
+                      <div className={styles.atleta}>
+                        <p className={styles.nome}>{jogadores.nome}</p>
+                        <p className={styles.posicao}>{jogadores.posicao}</p>
                       </div>
+                    </div>
+                    <div>
+                      <p className={styles.quantidadeGols}>{jogadores.gols}</p>
                     </div>
                   </div>
                 </div>
@@ -774,6 +467,8 @@ export default function TabelaBrasileirao() {
             })}
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

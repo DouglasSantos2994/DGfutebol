@@ -10,9 +10,14 @@
     width: 100%;
 }
 
+.idaVolta{
+    display: flex;
+    flex-direction: row;
+}
+
 .tabelaFase3 {
     border: 1px solid black;
-    width: 50%;
+    width: 80%;
 }
 
 .data {
@@ -42,21 +47,23 @@
 
 .text {
     margin-left: 10px;
+    margin-right: 10px;
     display: flex;
+    font-weight: 500;
 }
 
 .textEstadio {
     display: flex;
+    font-weight: 500;
 }
 
-.textMandante {
-    justify-content: space-around;
-    display: flex;
-}
+
 
 .textVisitante {
     margin-left: 10px;
     display: flex;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 

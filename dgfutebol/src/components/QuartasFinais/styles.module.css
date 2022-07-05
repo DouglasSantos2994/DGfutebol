@@ -1,0 +1,43 @@
+.container {
+    width: 80%;
+    margin-top: 15px;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tabelaFase3 {
+    border: 1px solid black;
+    width: 50%;
+}
+
+.jogosIda {
+    display: flex;
+    justify-content: space-around;
+    height: 110px;
+    align-items: center;
+}
+
+.idaVolta {
+    display: flex;
+    flex-direction: row;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+}
+
+.timeLocal {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.timeFora {
+    margin-left: 10px;
+    font-weight: bold;
+}
